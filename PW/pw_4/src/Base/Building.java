@@ -1,3 +1,5 @@
+package Base;
+
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -133,8 +135,8 @@ public class Building implements Buildable {
 
     @Override
     public void printInfo() {
-        System.out.printf("Building address: %s\n" +
-                        "Building type: %s\n" +
+        System.out.printf("Base.Building address: %s\n" +
+                        "Base.Building type: %s\n" +
                         "Count of floors: %d\n" +
                         "Count of flats: %d\n" +
                         "Period before major repairs: %d years\n" +

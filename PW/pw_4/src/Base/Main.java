@@ -1,3 +1,5 @@
+package Base;
+
 import java.time.LocalDate;
 
 public class Main {
@@ -5,7 +7,7 @@ public class Main {
         Building[] buildings = new Building[5];
 
         buildings[0] = new Building(
-                "123 Main Street, New York",
+                "123 Base.Main Street, New York",
                 "Office",
                 25,
                 0,
