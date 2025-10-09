@@ -1,14 +1,16 @@
 package Classes;
 
+import Interfaces.Chat;
+
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.temporal.TemporalAmount;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
 public class User implements Interfaces.User {
-    private static List<User> users;
+    private static List<User> users = new ArrayList<User>();
 
     private final String id;
     private String username, email;
@@ -21,7 +23,8 @@ public class User implements Interfaces.User {
 
     private List<PublicChat> publicChats;
     private List<PersonalChat> personalChats;
-    private Favorite favorite;
+
+    private List<Post> posts;
 
     public User(String username, String email, LocalDate dateOfBirth, Gender gender) {
         this.id = UUID.randomUUID().toString();
@@ -29,8 +32,18 @@ public class User implements Interfaces.User {
         this.email = email;
         this.username = username;
         this.registrationDate = LocalDate.now();
-        this.age = Period.between(registrationDate, dateOfBirth).getYears();
+        this.age = Period.between(dateOfBirth, LocalDate.now()).getYears();
         this.gender = gender;
+        this.friends = new ArrayList<User>();
+        this.blocked = new ArrayList<User>();
+        this.publicChats = new ArrayList<PublicChat>();
+        this.personalChats = new ArrayList<PersonalChat>();
+        this.posts = new ArrayList<Post>();
+        users.add(this);
+    }
+
+    public String getId() {
+        return id;
     }
 
     @Override
@@ -46,17 +59,90 @@ public class User implements Interfaces.User {
     }
 
     @Override
-    public void createPost(Post post) {
-
+    public void createPost(String title, String content) {
+        for (Post post : this.posts) {
+            if (post.getTitle().equals(title)) {
+                System.out.println("Post with title " + title + " is already exists.");
+                return;
+            }
+        }
+        Post post = new Post(title, content, this);
+        this.posts.add(post);
     }
 
     @Override
     public void deletePost(Post post) {
+        if (post.isAuthor(this)) {
+            this.posts.remove(post);
+            post = null;
+        }
+    }
 
+    public Post getLastPost() {
+        return this.posts.getLast();
+    }
+
+    public Post getPostByTitle(String title) {
+        for (Post post : this.posts) {
+            if (post.getTitle().equals(title)) return post;
+        }
+
+        System.out.println("There is no posts with title " + title + ".");
+        return null;
+    }
+
+    public void writeComment(Post post, String content) {
+        Comment comment = new Comment(this, content);
+        post.addComment(comment);
+    }
+
+    public void sendMessage(Chat chat, String content) {
+        Message message = new Message(this, content);
+        chat.addMessage(message);
     }
 
     public String getUsername() {
         return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public LocalDate getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public List<User> getFriends() {
+        return friends;
+    }
+
+    public List<User> getBlocked() {
+        return blocked;
+    }
+
+    public List<PublicChat> getPublicChats() {
+        return publicChats;
+    }
+
+    public List<PersonalChat> getPersonalChats() {
+        return personalChats;
     }
 
     public void addPublicChat(PublicChat chat) {

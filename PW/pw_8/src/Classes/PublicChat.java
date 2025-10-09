@@ -14,6 +14,7 @@ public class PublicChat extends Chat {
         super();
         this.admin = admin;
         this.membersCount = 1;
+        this.members = new ArrayList<User>();
         this.members.add(admin);
         this.title = title;
         this.info = info;
@@ -99,7 +100,7 @@ public class PublicChat extends Chat {
     }
 
     public void addMember(User user) {
-        if (isUserInChat(user)) {
+        if (!isUserInChat(user)) {
             this.members.add(user);
             user.addPublicChat(this);
             System.out.printf("User %s added.\n", user);
@@ -113,5 +114,10 @@ public class PublicChat extends Chat {
                 user.removePublicChat(this);
             } else System.out.printf("Error: user %s is an admin.\n", user);
         }
+    }
+
+    @Override
+    public String toString() {
+        return title;
     }
 }
