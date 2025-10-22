@@ -1,6 +1,6 @@
-package File;
+package Proxy.File;
 
-import States.FileType;
+import Proxy.States.FileType;
 
 public class File implements IFile {
     private String name;

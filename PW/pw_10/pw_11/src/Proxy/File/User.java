@@ -1,7 +1,7 @@
-package File;
+package Proxy.File;
 
-import States.FileType;
-import States.UserRole;
+import Proxy.States.FileType;
+import Proxy.States.UserRole;
 
 public class User {
     private final String name;

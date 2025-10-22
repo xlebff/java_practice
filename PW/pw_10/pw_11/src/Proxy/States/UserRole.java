@@ -1,4 +1,4 @@
-package States;
+package Proxy.States;
 
 public enum UserRole {
     GUEST,

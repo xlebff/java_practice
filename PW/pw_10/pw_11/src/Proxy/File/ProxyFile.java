@@ -1,6 +1,6 @@
-package File;
+package Proxy.File;
 
-import States.FileType;
+import Proxy.States.FileType;
 
 public class ProxyFile implements IFile {
     private final File file;

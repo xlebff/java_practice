@@ -1,8 +1,10 @@
-import File.IFile;
-import File.ProxyFile;
-import File.User;
-import States.FileType;
-import States.UserRole;
+package Proxy;
+
+import Proxy.File.IFile;
+import Proxy.File.ProxyFile;
+import Proxy.File.User;
+import Proxy.States.FileType;
+import Proxy.States.UserRole;
 
 public class Main {
     public static void main(String[] args) {
