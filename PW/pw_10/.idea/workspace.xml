@@ -1,36 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4be71a08-87f1-4947-8335-a6608f1d0627" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../pw_12/src/Observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pw_12/src/Observer/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pw_12/src/Subject/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pw_12/src/Subject/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/pw_11.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Decorator/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Decorator/Messages/EncryptedDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Decorator/Messages/IMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Decorator/Messages/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Decorator/Messages/MessageDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Decorator/Messages/SignedMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Decorator/Messages/TimestampedMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Proxy/File/File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Proxy/File/IFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Proxy/File/ProxyFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Proxy/File/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Proxy/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Proxy/States/FileType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pw_11/src/Proxy/States/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,24 +22,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="34T3ffSPYsp3sZ97qS7pyTGMm4q" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Data/Projects/java_practice/PW/pw_10/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Data/Projects/java_practice/PW/pw_10/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
