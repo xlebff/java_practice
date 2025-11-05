@@ -82,18 +82,6 @@ public class ImageMover {
             imageLabel.setLocation(originalPosition);
             System.out.println("At center");
         });
-
-        centerButton.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseEntered(MouseEvent e) {
-                centerButton.setBackground(new Color(200, 220, 255));
-            }
-
-            @Override
-            public void mouseExited(MouseEvent e) {
-                centerButton.setBackground(null);
-            }
-        });
     }
 
     public void show() {
