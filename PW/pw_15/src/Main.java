@@ -76,7 +76,6 @@ public class Main extends JFrame {
         productButtons[i].addActionListener(e -> addCustomProduct());
         productsPanel.add(productButtons[i]);
 
-        // Панель корзины
         JPanel cartPanel = new JPanel(new BorderLayout(10, 10));
         cartPanel.setBorder(BorderFactory.createCompoundBorder(
                 BorderFactory.createTitledBorder("Shopping Cart"),
@@ -95,7 +94,6 @@ public class Main extends JFrame {
         JScrollPane scrollPane = new JScrollPane(cartArea);
         scrollPane.setBorder(BorderFactory.createEmptyBorder());
 
-        // Панель управления
         JPanel controlPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 10));
         controlPanel.setBackground(Color.decode(BACKGROUND_COLOR));
 
