@@ -14,6 +14,11 @@ public class GameMap {
         initializeMap();
     }
 
+    // В класс GameMap добавьте:
+    public List<String> getLocationConnections() {
+        return locationConnections.get(currentLocation);
+    }
+
     private void initializeMap() {
         discoveredLocations.add(currentLocation);
 
@@ -57,6 +62,11 @@ public class GameMap {
     }
 
     public Set<String> getDiscoveredLocations() {
-        return discoveredLocations;
+        return Collections.unmodifiableSet(discoveredLocations);
+    }
+
+    // В класс GameMap добавьте:
+    public int getDiscoveredLocationsCount() {
+        return discoveredLocations.size();
     }
 }

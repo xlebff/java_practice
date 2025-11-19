@@ -143,8 +143,9 @@ public class Inventory {
         return equippedWeapon;
     }
 
+    // В класс Inventory добавьте:
     public Map<String, Item> getItems() {
-        return Collections.unmodifiableMap(items);
+        return new HashMap<>(items); // Возвращаем копию для безопасности
     }
 
     public int getCapacity() {
